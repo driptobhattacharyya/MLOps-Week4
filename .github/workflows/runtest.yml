@@ -52,6 +52,5 @@ jobs:
     - name: CML Report
       env:
         REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        pip install cml
+      run: 
         cml send-comment --md "$(pytest tests/ --verbose)"
