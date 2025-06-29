@@ -18,6 +18,11 @@ def load_data():
 
 def train_model():
     X_train, X_test, y_train, y_test = load_data()
+    # model = RandomForestClassifier(n_estimators=10)
+    # model.fit(X_train, y_train)
+    # # Save the model
+    # joblib.dump(model, 'iris_model.pkl')
+    # return model, X_test, y_test
     mod_dt = DecisionTreeClassifier(max_depth = 3, random_state = 1)
     mod_dt.fit(X_train,y_train)
     prediction=mod_dt.predict(X_test)
