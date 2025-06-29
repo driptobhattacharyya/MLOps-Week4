@@ -1,7 +1,8 @@
 pillow
+scikit-learn==1.0.2  # Last version compatible with Python 3.9 (citation:21)
+numpy==1.22.4       # Compatible with Python 3.9 and scikit-learn 1.0.2
+pytest==7.4.3
 scipy
-scikit-learn==1.3.2
-pytest==8.3.3
 cml
 joblib
 pandas
